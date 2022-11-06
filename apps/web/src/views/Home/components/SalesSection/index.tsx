@@ -69,7 +69,7 @@ const SalesSection: React.FC<React.PropsWithChildren<SalesSectionProps>> = (prop
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
         >
-          <CompositeImage {...images} />
+          
         </Flex>
       </Flex>
     </Flex>
