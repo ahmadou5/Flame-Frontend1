@@ -5,32 +5,12 @@ import { useTranslation } from '@pancakeswap/localization'
 
 import styled, { keyframes } from 'styled-components'
 
-import  { CompositeImageProps } from './CompositeImage'
+
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
-const flyingAnim = () => keyframes`
-  from {
-    transform: translate(0,  0px);
-  }
-  50% {
-    transform: translate(-5px, -5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-`
 
-const fading = () => keyframes`
-  from {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 0.9;
-  }
-`
+
+
 
 const BgWrapper = styled.div`
   z-index: -1;

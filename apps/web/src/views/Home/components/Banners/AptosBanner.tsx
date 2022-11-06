@@ -1,23 +1,11 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Text, useMatchBreakpoints, Box, OpenNewIcon } from '@pancakeswap/uikit'
+import { Button, Text, useMatchBreakpoints,  OpenNewIcon } from '@pancakeswap/uikit'
 
 import styled from 'styled-components'
 
 import * as S from './Styled'
 
-const RightWrapper = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: -10px;
-  ${({ theme }) => theme.mediaQueries.sm} {
-    right: 1px;
-    bottom: -18px;
-  }
-  ${({ theme }) => theme.mediaQueries.lg} {
-    right: 0px;
-    bottom: -21px;
-  }
-`
+
 const AptosTitle = styled.div`
   font-family: 'Kanit';
   font-style: normal;

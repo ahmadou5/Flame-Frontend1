@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import PageSection from 'components/PageSection'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import useTheme from 'hooks/useTheme'
-import Container from 'components/Layout/Container'
+
 import { PageMeta } from 'components/Layout/Page'
 import { useTranslation } from '@pancakeswap/localization'
 import { useActiveChainId } from 'hooks/useActiveChainId'
@@ -29,8 +29,7 @@ const StyledHeroSection = styled(PageSection)`
 
 const Home: React.FC<React.PropsWithChildren> = () => {
   const { theme } = useTheme()
-  const { account } = useWeb3React()
-  const { chainId } = useActiveChainId()
+ 
 
   const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '968px' }
 
