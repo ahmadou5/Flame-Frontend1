@@ -27,6 +27,14 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png"
     },
     {
+      "name": "FlameFinance Token",
+      "symbol": "FLAME",
+      "address": "0x3f2EF899eF580e6ee6202212585873E75F85C829",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x3f2EF899eF580e6ee6202212585873E75F85C829.png"
+    },
+    {
       "name": "Ethereum Token",
       "symbol": "ETH",
       "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
