@@ -1,5 +1,5 @@
 import { Flex, Text, Button, Link, NextLinkFromReactRouter as RouterLink } from '@pancakeswap/uikit'
-import CompositeImage, { CompositeImageProps } from '../CompositeImage'
+import  { CompositeImageProps } from '../CompositeImage'
 import ColoredWordHeading from '../ColoredWordHeading'
 
 interface SalesSectionButton {
@@ -18,7 +18,7 @@ export interface SalesSectionProps {
 }
 
 const SalesSection: React.FC<React.PropsWithChildren<SalesSectionProps>> = (props) => {
-  const { headingText, bodyText, reverse, primaryButton, secondaryButton, images } = props
+  const { headingText, bodyText, reverse, primaryButton,  } = props
 
   return (
     <Flex flexDirection="column">
@@ -62,9 +62,9 @@ const SalesSection: React.FC<React.PropsWithChildren<SalesSectionProps>> = (prop
           width={['192px', null, null, '100%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
-        >
+        />
           
-        </Flex>
+       
       </Flex>
     </Flex>
   )

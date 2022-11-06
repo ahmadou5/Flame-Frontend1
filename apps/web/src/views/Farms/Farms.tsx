@@ -1,7 +1,7 @@
 import { useEffect, useCallback, useState, useMemo, useRef, createContext } from 'react'
 import { createPortal } from 'react-dom'
 import BigNumber from 'bignumber.js'
-import { ChainId } from '@pancakeswap/sdk'
+
 import { useWeb3React } from '@pancakeswap/wagmi'
 import {
   Image,
@@ -40,7 +40,7 @@ import ToggleView from 'components/ToggleView/ToggleView'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import Table from './components/FarmTable/FarmTable'
 import { FarmWithStakedValue } from './components/types'
-import { BCakeBoosterCard } from './components/BCakeBoosterCard'
+
 
 const ControlContainer = styled.div`
   display: flex;
