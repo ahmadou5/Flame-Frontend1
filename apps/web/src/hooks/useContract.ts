@@ -8,7 +8,7 @@ import {
   Multicall,
   Weth,
   Zap,
-} from 'config/abi/types'
+} from '/config/abi/types'
 import zapAbi from 'config/abi/zap.json'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useProviderOrSigner } from 'hooks/useProviderOrSigner'
