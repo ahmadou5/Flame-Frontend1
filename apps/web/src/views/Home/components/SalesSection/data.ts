@@ -56,12 +56,12 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   ),
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56',
+    to: '/swap?outputCurrency=0x3f2EF899eF580e6ee6202212585873E75F85C829&chainId=56',
     text: t('Buy Flame'),
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/cake',
+    to: 'https://',
     text: t('Learn'),
     external: true,
   },
