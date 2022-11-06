@@ -54,30 +54,24 @@ const AptosBanner = () => {
       <S.Inner>
         <S.LeftWrapper>
           <Box>
-            <Image src={AptosXPancakeSwap} alt="aptosXPancakeSwapImage" width={211} height={18} placeholder="blur" />
+            
           </Box>
-          <AptosTitle>{t('Hello Aptos Project Teams!')}</AptosTitle>
+          <AptosTitle>{t('👋 Hi there Welcome To FlameFinance Beta!')}</AptosTitle>
 
           <Button
             minHeight="48px"
             onClick={() =>
-              window?.open('https://docs.pancakeswap.finance/aptos-deployment', '_blank', 'noopener noreferrer')
+              window?.open('https://', '_blank', 'noopener noreferrer')
             }
           >
             <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-              👋 {t('Get in Touch')}
+              👋 {t('Get Whitelisted')}
             </Text>
             <OpenNewIcon color="invertedContrast" />
           </Button>
         </S.LeftWrapper>
         <RightWrapper>
-          <Image
-            src={Aptos}
-            alt="aptosImage"
-            width={isMobile ? 1100 : 930}
-            height={isMobile ? 250 : 231}
-            placeholder="blur"
-          />
+          
         </RightWrapper>
       </S.Inner>
     </S.Wrapper>

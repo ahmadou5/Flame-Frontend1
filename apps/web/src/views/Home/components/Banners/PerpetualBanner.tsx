@@ -5,7 +5,7 @@ import { memo, useMemo, useRef } from 'react'
 import styled, { useTheme } from 'styled-components'
 import { perpLangMap } from 'utils/getPerpetualLanguageCode'
 import { perpTheme } from 'utils/getPerpetualTheme'
-import { perpetualImage, perpetualMobileImage } from './images'
+import { perpetualImage, perpetualMobileImage,flame } from './images'
 import * as S from './Styled'
 
 const RightWrapper = styled.div`
@@ -63,23 +63,19 @@ const PerpetualBanner = () => {
     <S.Wrapper>
       <S.Inner>
         <S.LeftWrapper>
-          <S.StyledSubheading ref={headerRef}>{t('Perpetual Futures')}</S.StyledSubheading>
-          <Header width={['160px', '160px', 'auto']}>{t('Up to 100× Leverage')}</Header>
+          <S.StyledSubheading ref={headerRef}>{t('Flame Trading Competition')}</S.StyledSubheading>
+          <Header width={['160px', '160px', 'auto']}>{t('Up to 1000$  To be Won!')}</Header>
           <Link href={perpetualUrl} external>
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-                {t('Trade Now')}
+                {t('Trade Flame Now')}
               </Text>
               <ArrowForwardIcon color="invertedContrast" />
             </Button>
           </Link>
         </S.LeftWrapper>
         <RightWrapper>
-          {isDesktop ? (
-            <Image src={perpetualImage} alt="PerpetualBanner" width={392} height={232} placeholder="blur" />
-          ) : (
-            <Image src={perpetualMobileImage} alt="PerpetualBanner" width={208} height={208} placeholder="blur" />
-          )}
+          
         </RightWrapper>
       </S.Inner>
     </S.Wrapper>
