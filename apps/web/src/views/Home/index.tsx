@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import PageSection from 'components/PageSection'
-import { useWeb3React } from '@pancakeswap/wagmi'
+
 import useTheme from 'hooks/useTheme'
 
 import { PageMeta } from 'components/Layout/Page'
 import { useTranslation } from '@pancakeswap/localization'
-import { useActiveChainId } from 'hooks/useActiveChainId'
+
 
 import Hero from './components/Hero'
 import {  cakeSectionData } from './components/SalesSection/data'
