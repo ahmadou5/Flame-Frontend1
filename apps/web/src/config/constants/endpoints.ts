@@ -37,7 +37,7 @@ export const ACCESS_RISK_API = 'https://red.alert.pancakeswap.com/red-api'
 export const CELER_API = 'https://api.celerscan.com/scan'
 
 export const INFO_CLIENT_WITH_CHAIN = {
-  [ChainId.BSC]: 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2',
+  [ChainId.BSC]: '',
   [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exhange-eth',
 }
 
