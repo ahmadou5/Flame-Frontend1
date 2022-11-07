@@ -3,7 +3,7 @@ import { useWeb3React } from '@pancakeswap/wagmi'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
 
-import styled, { keyframes } from 'styled-components'
+import styled  from 'styled-components'
 
 
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
