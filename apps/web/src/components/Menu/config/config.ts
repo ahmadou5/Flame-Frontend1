@@ -67,7 +67,6 @@ const config: (
     {
       label: t('Earn'),
       href: '/farms',
-      disabled: ChainId.BSC ? 'true': 'false',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
@@ -89,7 +88,7 @@ const config: (
     {
       label: t('NFT'),
       href: `${nftsBaseUrl}`,
-      disabled: ChainId.BSC ? 'true': 'false',
+      disabled: ChainId.ETHEREUM ? 'true': 'false',
       icon: NftIcon,
       fillIcon: NftFillIcon,
       supportChainIds: SUPPORT_ONLY_BSC,
@@ -116,7 +115,6 @@ const config: (
       label: '',
       href: '/info',
       icon: MoreIcon,
-      disabled: ChainId.BSC ? 'true': 'false',
       hideSubNav: true,
       
       items: [
@@ -125,13 +123,7 @@ const config: (
           href: '/info',
           status: { text: t('Mainnet'), color: 'primary' },
         },
-        {
-          label: t('IFO'),
-          href: '/ifo',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/ifos/ifo-bunny.png',
-          status: { text: t('Mainnet'), color: 'primary' },
-        },
+        
         {
           label: t('Voting'),
           href: '/voting',
@@ -139,16 +131,7 @@ const config: (
           image: '/images/voting/voting-bunny.png',
           status: { text: t('Mainnet'), color: 'primary' },
         },
-        {
-          type: DropdownMenuItemType.DIVIDER,
-        },
-        {
-          label: t('Leaderboard'),
-          href: '/teams',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/leaderboard.png',
-          status: { text: t('Mainnet'), color: 'primary' },
-        },
+       
         {
           type: DropdownMenuItemType.DIVIDER,
         },
