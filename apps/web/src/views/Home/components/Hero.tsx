@@ -1,5 +1,4 @@
 import { Button, Flex, Heading, NextLinkFromReactRouter } from '@pancakeswap/uikit'
-import { ChainId } from '@pancakeswap/sdk'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
