@@ -16,9 +16,7 @@ const AptosTitle = styled.div`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin-bottom: 18px;
   margin-top: 13px;
-  margin-right: auto;
-  margin-left: auto;
-
+ 
   @media screen and (max-width: 375px) {
     font-size: 19px;
   }
@@ -30,11 +28,7 @@ const AptosTitle = styled.div`
     font-size: 40px;
   }
 `
-const Button1 = styled.div`
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 21px;
-`
+
 const CoreDaoBanner = () => {
   const { t } = useTranslation()
   const { isMobile } = useMatchBreakpoints()
@@ -50,8 +44,6 @@ const CoreDaoBanner = () => {
 
           <AptosTitle>  {t('FlameFinance X CoreDao')}</AptosTitle>
           <AptosTitle> 👋 {t('Hello CoreDao Team')}</AptosTitle>
-
-          <Button1>
           <Button
             minHeight="48px"
             onClick={() =>
@@ -63,7 +55,6 @@ const CoreDaoBanner = () => {
             </Text>
             <OpenNewIcon color="invertedContrast" />
           </Button>
-          </Button1>
         </S.LeftWrapper>
       </S.Inner>
     </S.Wrapper>
