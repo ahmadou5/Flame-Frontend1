@@ -97,17 +97,17 @@ const config: (
         {
           label: t('Overview'),
           href: `${nftsBaseUrl}`,
-          status: { text: t('Mainnet'), color: 'primary' },
+          status: { text: t('Mainnet'), color: 'success' },
         },
         {
           label: t('Collections'),
           href: `${nftsBaseUrl}/collections`,
-          status: { text: t('Mainnet'), color: 'primary' },
+          status: { text: t('Mainnet'), color: 'success' },
         },
         {
           label: t('Activity'),
           href: `${nftsBaseUrl}/activity`,
-          status: { text: t('Mainnet'), color: 'primary' },
+          status: { text: t('Mainnet'), color: 'success' },
         },
       ],
     },
@@ -121,7 +121,7 @@ const config: (
         {
           label: t('Info'),
           href: '/info',
-          status: { text: t('Mainnet'), color: 'primary' },
+          status: { text: t('Mainnet'), color: 'success' },
         },
         
         {
@@ -129,7 +129,7 @@ const config: (
           href: '/voting',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/voting/voting-bunny.png',
-          status: { text: t('Mainnet'), color: 'primary' },
+          status: { text: t('Mainnet'), color: 'success' },
         },
         {
           label: t('Careers'),
