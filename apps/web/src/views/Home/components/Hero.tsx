@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, NextLinkFromReactRouter } from '@pancakeswap/uikit'
+import { ChainId } from '@pancakeswap/sdk'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
@@ -70,10 +71,10 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('Flame is the Source of Light.')}
+            {t('FlameFinance.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Light Your Portfolio With Flame Trade, earn, and burn crypto.')}
+            {t(`#1 DeFi Protocol On Core Chain Ecosystem Light Your Portfolio With Flame Trade, earn, and burn crypto.`)}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

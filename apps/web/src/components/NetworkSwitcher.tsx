@@ -144,7 +144,7 @@ export const NetworkSwitcher = () => {
         mr="8px"
         placement="bottom"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
-        avatarSrc={`/images/chains/${chainId}.png`}
+        avatarSrc={`/images/new/${chainId}.png`}
         disabled={cannotChangeNetwork}
         text={
           isLoading ? (
