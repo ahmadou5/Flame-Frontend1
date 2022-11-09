@@ -39,22 +39,22 @@ export const useMultipleBannerConfig = () => {
       { shouldRender: true, banner: <TokenListBanner /> },
       { shouldRender: true, banner: <CoreDaoBanner /> },
       {
-        shouldRender: isRenderIFOBanner,
+        shouldRender: false,
         banner: <IFOBanner />,
       },
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [
       {
-        shouldRender: isRenderCompetitionBanner,
+        shouldRender:false,
         banner: <CompetitionBanner />,
       },
       {
-        shouldRender: isRenderLotteryBanner,
+        shouldRender: false,
         banner: <LotteryBanner />,
       },
       {
-        shouldRender: isRenderLotteryBanner,
+        shouldRender: false,
         banner: <PerpetualBanner />,
       },
     ]
