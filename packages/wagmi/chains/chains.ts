@@ -1,4 +1,4 @@
-import { rinkeby, mainnet, goerli } from 'wagmi/chains'
+import { rinkeby, goerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
 
 export const avalandche: Chain = {
@@ -17,6 +17,21 @@ export const avalandche: Chain = {
   },
 }
 
+export const mainnet: Chain = {
+  id: 1,
+  name: 'Core Chain Testnet',
+  network: 'homestead',
+  rpcUrls: {
+    default: 'https://rpc.ankr.com/avalanche',
+  },
+  nativeCurrency: { name: 'CORE', symbol: 'tCORE', decimals: 18 },
+  blockExplorers: {
+    default: {
+      name: 'CoreScan',
+      url: 'https://snowtrace.io/',
+    },
+  },
+}
 export const avalandcheFuji: Chain = {
   id: 43113,
   name: 'Avalanche Fuji',
@@ -115,4 +130,4 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export { rinkeby, mainnet, goerli }
+export { rinkeby,  goerli }

@@ -35,8 +35,8 @@ export const WETH9 = {
     ChainId.ETHEREUM,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
-    'WETH',
-    'Wrapped Ether',
+    'tCORE',
+    'CORE',
     'https://weth.io'
   ),
   [ChainId.RINKEBY]: new ERC20Token(
@@ -100,7 +100,7 @@ export const NATIVE: Record<
     decimals: number
   }
 > = {
-  [ChainId.ETHEREUM]: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+  [ChainId.ETHEREUM]: { name: 'CORE', symbol: 'tCORE', decimals: 18 },
   [ChainId.RINKEBY]: { name: 'Rinkeby Ether', symbol: 'RIN', decimals: 18 },
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
   [ChainId.BSC]: {

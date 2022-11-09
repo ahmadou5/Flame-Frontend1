@@ -1,3 +1,4 @@
+import { ChainId } from '@pancakeswap/sdk'
 import {
   MenuItemsType,
   DropdownMenuItemType,
@@ -66,6 +67,7 @@ const config: (
     {
       label: t('Earn'),
       href: '/farms',
+      disabled: ChainId.BSC ? 'true': 'false',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
@@ -73,10 +75,12 @@ const config: (
         {
           label: t('Farms'),
           href: '/farms',
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           label: t('Pools'),
           href: '/pools',
+          status: { text: t('Mainnet'), color: 'primary' },
           supportChainIds: SUPPORT_ONLY_BSC,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
@@ -85,6 +89,7 @@ const config: (
     {
       label: t('NFT'),
       href: `${nftsBaseUrl}`,
+      disabled: ChainId.BSC ? 'true': 'false',
       icon: NftIcon,
       fillIcon: NftFillIcon,
       supportChainIds: SUPPORT_ONLY_BSC,
@@ -93,14 +98,17 @@ const config: (
         {
           label: t('Overview'),
           href: `${nftsBaseUrl}`,
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           label: t('Collections'),
           href: `${nftsBaseUrl}/collections`,
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           label: t('Activity'),
           href: `${nftsBaseUrl}/activity`,
+          status: { text: t('Mainnet'), color: 'primary' },
         },
       ],
     },
@@ -108,23 +116,28 @@ const config: (
       label: '',
       href: '/info',
       icon: MoreIcon,
+      disabled: ChainId.BSC ? 'true': 'false',
       hideSubNav: true,
+      
       items: [
         {
           label: t('Info'),
           href: '/info',
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           label: t('IFO'),
           href: '/ifo',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/ifos/ifo-bunny.png',
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           label: t('Voting'),
           href: '/voting',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/voting/voting-bunny.png',
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           type: DropdownMenuItemType.DIVIDER,
@@ -134,6 +147,7 @@ const config: (
           href: '/teams',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/decorations/leaderboard.png',
+          status: { text: t('Mainnet'), color: 'primary' },
         },
         {
           type: DropdownMenuItemType.DIVIDER,

@@ -1,6 +1,6 @@
 import React from "react";
-import { renderWithProvider } from "../../testHelpers";
-import { BaseLayout, CardsLayout } from "../../components/Layouts";
+import { renderWithProvider } from "../../packages/uikit/src/testHelpers";
+import { BaseLayout, CardsLayout } from "../../packages/uikit/src/components/Layouts";
 
 it("renders base layout correctly", () => {
   const { asFragment } = renderWithProvider(<BaseLayout>basic layout</BaseLayout>);
