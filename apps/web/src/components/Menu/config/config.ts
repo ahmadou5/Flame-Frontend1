@@ -131,6 +131,11 @@ const config: (
           image: '/images/voting/voting-bunny.png',
           status: { text: t('Mainnet'), color: 'primary' },
         },
+        {
+          label: t('Careers'),
+          href: '/',
+          status: { text: t('Hiring'), color: 'success' },
+        },
        
         {
           type: DropdownMenuItemType.DIVIDER,

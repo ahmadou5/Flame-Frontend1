@@ -70,10 +70,10 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('FlameFinance.')}
+            {t('#1 Dex On Core Chain Ecosystem FlameFinance.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t(`#1 DeFi Protocol On Core Chain Ecosystem Light Your Portfolio With Flame Trade, earn, and burn crypto.`)}
+            {t(`FlameFinance is the most used decentralised trading protocol that utilizes the secuirity scalability, and decentralisation of Core blockchain, creating an decentralised open and safe marketplace for Traders,liquidity Providers and Developers.`)}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

@@ -10,9 +10,14 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://',
         isHighlighted: true,
       },
+     
       {
-        label: t('Brand'),
-        href: 'https://',
+        label: t('Blog'),
+        href: 'https://medium.com/',
+      },
+      {
+        label: t('CoreDao'),
+        href: 'https://coredao.og',
       },
       
     ],
@@ -25,6 +30,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Guides'),
         href: 'https://',
       },
+      {
+        label: t('Getting Started With Core'),
+        href: 'https://docs.coredao.org/developer',
+      },
     ],
   },
   {
@@ -34,10 +43,18 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: 'Github',
         href: 'https://github.com/',
       },
-      
+      {
+        label: 'Docs',
+        href: 'https://',
+      },
+      {
+        label: 'Core Network Docs',
+        href: 'https://docs.coredao.org/core-white-paper-v1.0.5',
+      },
       {
         label: t('Careers'),
         href: 'https://',
+        status: {text : 'hiring' , color : 'primary'}
       },
     ],
   },
