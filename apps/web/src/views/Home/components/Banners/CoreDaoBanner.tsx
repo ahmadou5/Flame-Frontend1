@@ -10,17 +10,17 @@ const AptosTitle = styled.div`
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 600;
-  font-size: 23px;
-  line-height: 110%;
+  font-size: 20px;
+  line-height: 70%;
   color: #ffffff;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  margin-bottom: 21px;
-  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-top: 13px;
   margin-right: auto;
   margin-left: auto;
 
   @media screen and (max-width: 375px) {
-    font-size: 21px;
+    font-size: 19px;
   }
   ${({ theme }) => theme.mediaQueries.sm} {
     font-size: 35px;
@@ -33,10 +33,9 @@ const AptosTitle = styled.div`
 const Button1 = styled.div`
   margin-right: auto;
   margin-left: auto;
-  display
+  margin-bottom: 21px;
 `
-
-const AptosBanner = () => {
+const CoreDaoBanner = () => {
   const { t } = useTranslation()
   const { isMobile } = useMatchBreakpoints()
   return (
@@ -48,21 +47,22 @@ const AptosBanner = () => {
     >
       <S.Inner>
         <S.LeftWrapper>
-         
-          <AptosTitle>{t('👋 Hi there Welcome To FlameFinance Beta!')}</AptosTitle>
+
+          <AptosTitle>  {t('FlameFinance X CoreDao')}</AptosTitle>
+          <AptosTitle> 👋 {t('Hello CoreDao Team')}</AptosTitle>
 
           <Button1>
-            <Button
-              minHeight="48px"
-              onClick={() =>
-                window?.open('https://', '_blank', 'noopener noreferrer')
-              }
-            >
-              <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-                👋 {t('Get Whitelisted')}
-              </Text>
-              <OpenNewIcon color="invertedContrast" />
-            </Button>
+          <Button
+            minHeight="48px"
+            onClick={() =>
+              window?.open('https://coredao.org/', '_blank', 'noopener noreferrer')
+            }
+          >
+            <Text color="invertedContrast" bold fontSize="16px" mr="14px">
+             {t('Explore CoreDao')}
+            </Text>
+            <OpenNewIcon color="invertedContrast" />
+          </Button>
           </Button1>
         </S.LeftWrapper>
       </S.Inner>
@@ -70,4 +70,4 @@ const AptosBanner = () => {
   )
 }
 
-export default AptosBanner
+export default CoreDaoBanner

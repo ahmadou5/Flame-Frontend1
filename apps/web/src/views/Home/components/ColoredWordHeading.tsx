@@ -16,7 +16,7 @@ const ColoredWordHeading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
   const split = text.split(' ')
   const firstWord = split[0]
   const remainingWords = split.slice(1).join(' ')
-  const displayedColor = (theme.colors[firstColor] as string) ?? theme.colors.secondary
+  const displayedColor = (theme.colors[firstColor] as string) ?? theme.colors.secondary80
 
   return (
     <Heading scale="xl" mb={mb} {...props}>

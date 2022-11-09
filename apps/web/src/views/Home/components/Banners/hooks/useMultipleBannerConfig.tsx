@@ -8,6 +8,8 @@ import useIsRenderIfoBanner from './useIsRenderIFOBanner'
 import useIsRenderLotteryBanner from './useIsRenderLotteryBanner'
 import useIsRenderCompetitionBanner from './useIsRenderCompetitionBanner'
 import AptosBanner from '../AptosBanner'
+import TokenListBanner from '../TokenListBanner'
+import CoreDaoBanner from '../CoreDaoBanner'
 
 interface IBannerConfig {
   shouldRender: boolean
@@ -34,6 +36,8 @@ export const useMultipleBannerConfig = () => {
   return useMemo(() => {
     const NO_SHUFFLE_BANNERS: IBannerConfig[] = [
       { shouldRender: true, banner: <AptosBanner /> },
+      { shouldRender: true, banner: <TokenListBanner /> },
+      { shouldRender: true, banner: <CoreDaoBanner /> },
       {
         shouldRender: isRenderIFOBanner,
         banner: <IFOBanner />,
@@ -50,7 +54,7 @@ export const useMultipleBannerConfig = () => {
         banner: <LotteryBanner />,
       },
       {
-        shouldRender: true,
+        shouldRender: isRenderLotteryBanner,
         banner: <PerpetualBanner />,
       },
     ]

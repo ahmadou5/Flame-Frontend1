@@ -20,7 +20,7 @@ const Header = styled(S.StyledHeading)`
 
 const HEADING_ONE_LINE_HEIGHT = 27
 
-const PerpetualBanner = () => {
+const TokenListBanner = () => {
   const {
     t,
     currentLanguage: { code },
@@ -49,12 +49,12 @@ const PerpetualBanner = () => {
     <S.Wrapper>
       <S.Inner>
         <S.LeftWrapper>
-          <S.StyledSubheading ref={headerRef}>{t('FlameFinance X CoreDao')}</S.StyledSubheading>
-          <Header width={['160px', '160px', 'auto']}>{t('Hello CoreDao Team')}</Header>
+          <S.StyledSubheading ref={headerRef}>{t('Token Listing')}</S.StyledSubheading>
+          <Header width={['160px', '160px', 'auto']}>{t('Apply For Farms and Pools')}</Header>
           <Link href={perpetualUrl} external>
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-                {t('Explore CoreDao')}
+                {t('Apply Now')}
               </Text>
               <ArrowForwardIcon color="invertedContrast" />
             </Button>
@@ -66,4 +66,4 @@ const PerpetualBanner = () => {
   )
 }
 
-export default memo(PerpetualBanner)
+export default memo(TokenListBanner)
