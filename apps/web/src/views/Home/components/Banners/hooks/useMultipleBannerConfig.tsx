@@ -29,10 +29,7 @@ interface IBannerConfig {
  * ```
  */
 export const useMultipleBannerConfig = () => {
-  const isRenderIFOBanner = useIsRenderIfoBanner()
-  const isRenderLotteryBanner = useIsRenderLotteryBanner()
-  const isRenderCompetitionBanner = useIsRenderCompetitionBanner()
-
+ 
   return useMemo(() => {
     const NO_SHUFFLE_BANNERS: IBannerConfig[] = [
       { shouldRender: true, banner: <AptosBanner /> },
@@ -49,14 +46,7 @@ export const useMultipleBannerConfig = () => {
         shouldRender:false,
         banner: <CompetitionBanner />,
       },
-      {
-        shouldRender: false,
-        banner: <LotteryBanner />,
-      },
-      {
-        shouldRender: false,
-        banner: <PerpetualBanner />,
-      },
+ 
     ]
     return [...NO_SHUFFLE_BANNERS, ...shuffle(SHUFFLE_BANNERS)]
       .filter((bannerConfig: IBannerConfig) => bannerConfig.shouldRender)
