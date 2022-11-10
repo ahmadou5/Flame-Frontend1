@@ -88,7 +88,7 @@ const config: (
     {
       label: t('NFT'),
       href: `${nftsBaseUrl}`,
-      disabled: ChainId.ETHEREUM ? 'true': 'false',
+      
       icon: NftIcon,
       fillIcon: NftFillIcon,
       supportChainIds: SUPPORT_ONLY_BSC,
