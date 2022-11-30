@@ -1,4 +1,4 @@
-# 🥞 Pancake Frontend
+# 🔥 Flame Frontend
 
 <p align="center">
   <a href="https://pancakeswap.finance">
